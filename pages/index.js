@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
 
         <main>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Meu programa de computador da Interweb
           </h1>
 
           <Link href="https://google.com">Google</Link>
