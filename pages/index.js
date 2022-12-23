@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <div className={styles.container}>
         <Head>
-          <title>Create Next App</title>
+          <title>Meu programa de computador da Interweb.</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
