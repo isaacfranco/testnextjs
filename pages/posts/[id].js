@@ -10,6 +10,8 @@ export default function Post({ postData }) {
       {postData.id}
       <br />
       {postData.date}
+      <br/>
+      {postData.content}
     </Layout>
   );
 }

@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
+  
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -16,6 +17,7 @@ export async function getStaticProps() {
 
 
 export default function Home({ allPostsData }) {
+  
   return (
     <Layout home>
       <div className={styles.container}>
@@ -33,7 +35,7 @@ export default function Home({ allPostsData }) {
           <Link href="/posts">Posts</Link>
 
           <p className={styles.description}>
-            Get started by editing <code>pages/index.js</code>
+            Inicie editando o <code>pages/index.js</code>
           </p>
 
         </main>
@@ -106,7 +108,6 @@ export default function Home({ allPostsData }) {
       {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
               
-              <br />
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               {date}
